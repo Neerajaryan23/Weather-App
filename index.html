@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="glass-card">
+        <!-- Main Content -->
+        <div class="content">
+          <!-- LEFT -->
+          <div class="left-section">
+            <!-- search -->
+            <div class="input">
+              <input type="text" placeholder="Enter City Name..." />
+              <button id="btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <circle cx="11" cy="11" r="8" stroke-width="2" />
+                  <line
+                    x1="21"
+                    y1="21"
+                    x2="16.65"
+                    y2="16.65"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="main-section">
+              <div class="weather"></div>
+              <div class="time"></div>
+              <div class="day"></div>
+              <div class="date"></div>
+
+              <div class="temp-toggle">
+                <span class="temp-value"></span>
+                <span class="temp-unit">
+                  <span class="tempC active">°C</span>
+                  <span class="tempF inactive">°F</span>
+                </span>
+                <div class="icon"></div>
+              </div>
+            </div>
+
+            <!-- <div class="description"></div> -->
+            <div class="description"></div>
+          </div>
+
+          <!-- RIGHT -->
+
+          <div class="right-section">
+            <div class="conditions">
+              <div class="Wind"></div>
+              <div class="Pressure"></div>
+              <div class="Humidity"></div>
+              <div class="Region"></div>
+            </div>
+
+            <!-- Hourly inside Right -->
+            <div class="hourly-container">
+              <h3>Hourly Forecast</h3>
+              <div class="hourly"></div>
+            </div>
+
+            <!-- Sunrise & Sunset bottom right -->
+            <div class="sun">
+              <div class="sun-box">
+                <img src="sunrise.png" alt="sunrise img" />
+                <span class="sunrise"></span>
+              </div>
+
+              <div class="sun-box">
+                <img src="sunset.png" alt="sunset img" />
+                <span class="sunset"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
